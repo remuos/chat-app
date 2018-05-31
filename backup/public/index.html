@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Node chat app</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="chat">
+
+	<div class="chat__sidebar">
+		<h3> People </h3>
+		<div id="users"></div>
+	</div>
+	<div class="chat__main">
+		
+		<div id="chat__footer">
+			<p>Welcome to nede chat app</p>
+			<ol id="messages" id="chat__messages" ></ol>
+			<form action="" id="message-form">
+				<input name="message" type="text" placeholder="Message" autofocus autocomplete>
+				<button>Send</button>
+			</form>
+			<button id="sendlocation">Send Location</button>
+		</div>
+	</div>
+		
+	<!-- <p>Welcome to nede chat app</p>
+	<ol id="message"></ol>
+	<form action="" id="message-form">
+		<input name="message" type="text" placeholder="Message">
+		<button>Send</button>
+	</form>
+	<button id="sendlocation">Send Location</button> -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
